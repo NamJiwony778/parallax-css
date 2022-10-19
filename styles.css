@@ -1,0 +1,81 @@
+:root {
+  --height: 150vh;
+  --opacity: 0.5;
+  --white: #ffffff;
+  --size: 50px;
+}
+
+body,
+html,
+main,
+.slide-container {
+  height: var(--height);
+  padding: 0;
+  margin: 0;
+}
+
+.slide-container {
+  position: relative;
+  text-align: center;
+}
+
+.text-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font-size: var(--size);
+  font-family: "Albert Sans", sans-serif;
+}
+
+.paralax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-one {
+  background-image: url("images/winter.jpg");
+  height: var(--height);
+}
+
+.slide-between-one {
+  height: var(--height);
+  background-image: url("images/winter2.jpg");
+  opacity: var(--opacity);
+}
+
+.slide-two {
+  background-image: url("images/spring.jpg");
+  height: var(--height);
+}
+
+.slide-between-two {
+  height: var(--height);
+  background-image: url("images/spring2.jpg");
+  opacity: var(--opacity);
+}
+
+.slide-three {
+  background-image: url("images/summer.jpg");
+  height: var(--height);
+}
+
+.slide-between-three {
+  height: var(--height);
+  background-image: url("images/summer2.jpg");
+  opacity: var(--opacity);
+}
+
+.slide-four {
+  background-image: url("images/autumn.jpg");
+  height: var(--height);
+}
+
+.slide-between-four {
+  height: var(--height);
+  background-image: url("images/autumn2.jpg");
+  opacity: var(--opacity);
+}
